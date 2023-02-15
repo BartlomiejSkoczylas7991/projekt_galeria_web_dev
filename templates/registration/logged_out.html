@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Wylogowałeś się{% endblock %}
+
+{% block content %}
+  <h1>Wylogowałeś się</h1>
+  <p>
+    Udało ci się wylogować.
+    Możesz <a href="{% url "login" %}">zalogować się ponownie</a>.
+  </p>
+{% endblock %}
