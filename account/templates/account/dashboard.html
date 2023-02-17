@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Panel{% endblock %}
+
+{% block content %}
+  <h1>Panel</h1>
+  <p>Witamy w Panelu. Możesz <a href="{% url "edit" %}">edytować swój profil</a> lub <a href="{% url "password_change" %}">zmienić hasło</a>.</p>
+    {% with total_images_created=request.user.images_created.count %}
+    <p>Witaj w panelu głównym. Dodałeś {{ total_images_created }} obraz{{ total_images_created|pluralize:"ów" }}</p>
+    {% endwith %}
+    <!-- jakiś błąd wyskakuje... -->
+    <!--<p>Dodaj swoje zdjęcia do galerii <a href="" class="button">Dodaj obraz</a></p>-->
+
+{% endblock %}
