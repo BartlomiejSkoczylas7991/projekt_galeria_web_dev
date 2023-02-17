@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body
+{
+    background: rgb(130, 209, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+   position: relative;
+   width: 100%; 
+   max-width: 1000px;
+   min-height: 100px;
+   background: #fff;
+   margin: 50px;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.container .left
+{
+    position: relative;
+    background: #064867;
+    padding: 40px;
+}
+.profileText
+{
+    color:#fff;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.imgBx 
+{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+.profileText h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.title
+{
+    color: #fff;
+    text-transform:uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo
+{
+    padding-top: 40px
+}
+.contactInfo ul
+{
+    position: relative;
+}
+.contactInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #52c0f3;
+}
+.contactInfo ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+.contactInfo.Education li
+{
+    margin-bottom: 15px;
+}
+.contactInfo.Education h5
+{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.contactInfo.Education h4:nth-child(2)
+{
+    color: #fff;
+    font-weight: 500;
+}
+.contactInfo.Education h4
+{
+    color: #fff;
+    font-weight: 300;
+}
+.contactInfo.Language .percent
+{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgb(81, 7, 7);
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.Language .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #08aaf6;
+}
+.container .right
+{
+    position: relative;
+    background: #dde0e1;
+    padding: 40px;
+}
+.about
+{
+    margin-bottom: 50px;
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.title2
+{
+    color: #023147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p
+{
+    color: #333;
+}
